@@ -1,27 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  margin: 0;
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 1.8em;
 }
 
-header{
-    text-align: center;
-    background-image: url('https://cdn.sforum.vn/sforum/wp-content/uploads/2023/04/hinh-nen-powerpoint-25.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 3%;
+a {
+  color: #1c9c94;
+  text-decoration: none;
 }
 
-.avatar{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px;
-    margin-top: 7%;
+a:hover {
+  opacity: 0.5;
 }
 
-.icon-contact {
-    margin-top: 0.5%;
-    width: 30px;
-    height: 30px;
-    padding-left: 0.4%;
+article {
+  padding: 0 1em;
+}
+
+section {
+  margin: 1em;
+  padding: 1em;
+  padding-left: 4em;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url("./img/bg");
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header p {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+header img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+header a {
+  margin-left: 10px;
+  text-align: left !important;
+}
+
+hr {
+  border: 1px solid #000;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+  color: #003399;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+main h2 {
+  color: Navy;
+}
+h3,
+h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+}
+.skill-bar {
+  width: 300px;
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 3%;
+}
+
+footer {
+  text-align: center;
 }
