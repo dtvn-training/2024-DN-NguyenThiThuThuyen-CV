@@ -18,13 +18,31 @@
 
   <body>
     <header>
-      <div class="line-header"></div>
+      <nav class="navbar">
+        <ul class="navbar-nav" id="navigation">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <div>
         <img src="./img/IMG_1270.jpg" />
       </div>
-      <h1 class="name-lable">Nguyen Thi Thu Thuyen</h1>
+      <h1>Nguyen Thi Thu Thuyen</h1>
       <h2>SOFTWARE DEVELOPER</h2>
-      <div>
+      <div class="icon">
         <a
           href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQXjLXmTgPlrVJSqXWrXgfvQFMjHwQwjrCKjgSmvrDFMknvjVMhzdtQfhwqxfnFrNfgrL"
           target="_blank"
@@ -39,22 +57,31 @@
           ></i>
         </a>
         <a href="https://github.com/thuyennguyen020517" target="_blank">
-          <i class="fa-brands fa-github fa-xl" style="color: #006600"></i>
+          <i
+            class="fa-brands fa-github fa-xl rotate-icon"
+            style="color: #006600"
+          ></i>
         </a>
       </div>
-      
+      <div class="icon-mouse">
+        <i
+          class="fa-solid fa-computer-mouse fa-rotate-180 fa-xl"
+          style="color: #74c0fc"
+        ></i>
+      </div>
     </header>
     <main>
-      <div class="frame">
+      <div class="frame" id="about">
         <div class="container">
           <div class="column-left">
             <h2>ABOUT ME</h2>
             <p class="">
-              Greetings! My name is Nguyen Thi Thu Thuyen, and I am actively seeking a
-              Web Development position within a dynamic and challenging work
-              environment. I possess an open-minded attitude, a strong eagerness to
-              learn, a keen interest in gaining valuable experience, and a dedicated
-              commitment to contribute to the growth of the company.
+              Greetings! My name is Nguyen Thi Thu Thuyen, and I am actively
+              seeking a Web Development position within a dynamic and
+              challenging work environment. I possess an open-minded attitude, a
+              strong eagerness to learn, a keen interest in gaining valuable
+              experience, and a dedicated commitment to contribute to the growth
+              of the company.
             </p>
           </div>
           <div class="">
@@ -79,7 +106,7 @@
         </div>
       </div>
 
-      <h2 class="lable-subject">WORK EXPERIENCE</h2>
+      <h2 class="lable-subject" id="experience">WORK EXPERIENCE</h2>
       <div class="row">
         <div class="col-name">
           <b>BOOKING HOTEL SYSTEM</b>
@@ -87,13 +114,19 @@
         </div>
         <div class="col-detail">
           <div><b>Number of member:</b>5</div>
+          <b>Source: https://github.com/thuyennguyen020517/InnSight.git</b>
           <div><b>Technologies:</b> Java Spring-Boot, React, React Native</div>
           <div><b>Functional Description:</b></div>
           <div class="description">
             <li>You can booking hotel in my system</li>
-            <li>Online booking: my system allows users to conveniently book accommodation online.</li>
+            <li>
+              Online booking: my system allows users to conveniently book
+              accommodation online.
+            </li>
             <li>Paying bills via VnPay is fast and convenient.</li>
-            <li>Allows hoteliers to list their hotels on our system for bookings.</li>
+            <li>
+              Allows hoteliers to list their hotels on our system for bookings.
+            </li>
             <li>Allows admins to manage facilities and users easily.</li>
             <li>Hoteliers will receive payments from their hotel bookings</li>
           </div>
@@ -134,16 +167,34 @@
         </div>
       </div>
 
-      <h2 class="lable-subject">SKILLS</h2>
+      <h2 class="lable-subject" id="skill">SKILLS</h2>
       <div class="frame">
-        <h2>SKILLS</h2>
-        
+        <div class="styled">BACK-END</div>
+        <nav class="item-skill">
+          <li>OOP, MVC, RESTful API</li>
+          <li>C/C++, C#, java, php, python</li>
+        </nav>
+        <div class="styled">FRONT-END</div>
+        <nav class="item-skill">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Boostrap</li>
+          <li>Reactjs, Tailwind, MUI</li>
+        </nav>
+        <div class="styled">OTHERS</div>
+        <nav class="item-skill">
+          <li>Good knowledge of OOP, Data structures, Algorithms</li>
+          <li>Experienced and proficient in GIT</li>
+          <li>Can read English document</li>
+        </nav>
       </div>
       <div class="frame">
         <h2>EDUCATION</h2>
         <section>
           <div>
-            <i class="fa-solid fa-graduation-cap fa-lg" style="color: #74c0fc"></i>
+            <i
+              class="fa-solid fa-graduation-cap fa-lg"
+              style="color: #74c0fc"
+            ></i>
             <b>DA NANG UNIVERSITY OF SCIENE AND TECHNOLOGY // 2020 - present</b>
             <div>
               <b>Major: Software Engeering</b>
@@ -151,7 +202,7 @@
             <div>4th years Software Engineering student</div>
             <div>GPA: 3.29/4 (present)</div>
             <div>Expected to graduate in 7/2024</div>
-            </div>
+          </div>
         </section>
       </div>
     </main>
