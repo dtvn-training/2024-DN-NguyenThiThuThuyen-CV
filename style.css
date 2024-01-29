@@ -6,13 +6,13 @@ body {
   font-size: 16px;
   line-height: 1.8em;
   scroll-behavior: smooth;
+  min-width: 700px;
 }
 
 a {
-  color: #1c9c94;
+  color: #000;
   text-decoration: none;
 }
-
 a:hover {
   opacity: 0.5;
 }
@@ -31,9 +31,13 @@ main,
 footer {
   margin: 0 auto;
 }
-
+.lable-name{
+  margin-right: 20%;
+  font-weight: bold ;
+  color: #fff;
+}
 .navbar {
-  background-color: #33cc99;
+  background-color: #669999;
   padding: 15px 0;
   position: fixed;
   width: 100%;
@@ -66,7 +70,7 @@ footer {
 }
 
 .nav-link:hover {
-  color: #f8f9fa;
+  border: 1 solid #dddddd;
 }
 
 header {
@@ -104,17 +108,29 @@ h1 {
   color: #003399;
 }
 
-h3 {
-  text-transform: uppercase;
-}
 header h2 {
   color: #555;
 }
 .icon {
-  margin: 1.5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon-mouse {
-  margin-top: 2.5%;
+.icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #EEEE;
+  transition: background-color 0.3s ease;
+  margin-top: -1.5%;
+}
+
+.icon a:hover {
+  background-color: #DDDDDD;
 }
 h3,
 h4 {
@@ -122,6 +138,9 @@ h4 {
 }
 main {
   max-width: 1200px;
+}
+.section-padding{
+  padding: 1% 0;
 }
 .frame {
   border: 1px solid #dddddd;
@@ -147,6 +166,9 @@ main {
   font-weight: bold;
   min-width: 40%;
 }
+.info-contact{
+  max-width: 100%;
+}
 .lable-subject {
   text-align: center;
   margin-bottom: 3%;
@@ -162,7 +184,7 @@ main {
 }
 .col-name {
   width: 20%;
-  background-color: #009966;
+  background-color: #339966;
   padding: 2%;
   text-align: center;
   font-size: 18px;
@@ -170,6 +192,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .col-detail {
   padding: 2%;
@@ -202,7 +225,7 @@ main {
 }
 
 .styled:hover {
-  background-color: #669966;
+  background-color: #FF6666;
 }
 
 .styled:active {
@@ -215,4 +238,21 @@ main {
 }
 footer {
   text-align: center;
+  background-color: #669999;
+  padding: 0.5% 0;
+}
+footer h3 {
+  margin: 0;
+  padding: 0.5% 0;
+}
+footer .icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #EEEE;
+  transition: background-color 0.3s ease;
 }

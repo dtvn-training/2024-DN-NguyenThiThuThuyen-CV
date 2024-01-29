@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>My_Resume</title>
-    <meta name="author" content="Fly Nerd" />
-    <!-- <link rel="icon" href="./img/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -17,23 +15,21 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar">
+        <a class="lable-name" href="#header">THU THUYEN</a>
         <ul class="navbar-nav" id="navigation">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skill">Skills</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#skill">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
         </ul>
       </nav>
@@ -42,36 +38,35 @@
       </div>
       <h1>Nguyen Thi Thu Thuyen</h1>
       <h2>SOFTWARE DEVELOPER</h2>
-      <div class="icon">
-        <a
-          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQXjLXmTgPlrVJSqXWrXgfvQFMjHwQwjrCKjgSmvrDFMknvjVMhzdtQfhwqxfnFrNfgrL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-regular fa-envelope fa-xl" style="color: #006600"></i>
-        </a>
-        <a href="https://www.facebook.com/nttthuyenn" target="_blank">
-          <i
-            class="fa-brands fa-square-facebook fa-xl"
-            style="color: #006600"
-          ></i>
-        </a>
-        <a href="https://github.com/thuyennguyen020517" target="_blank">
-          <i
-            class="fa-brands fa-github fa-xl rotate-icon"
-            style="color: #006600"
-          ></i>
-        </a>
-      </div>
-      <div class="icon-mouse">
-        <i
-          class="fa-solid fa-computer-mouse fa-rotate-180 fa-xl"
-          style="color: #74c0fc"
-        ></i>
-      </div>
+      
     </header>
+    <div class="icon">
+      <a
+        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQXjLXmTgPlrVJSqXWrXgfvQFMjHwQwjrCKjgSmvrDFMknvjVMhzdtQfhwqxfnFrNfgrL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-regular fa-envelope fa-xl" style="color: #006600"></i>
+      </a>
+      <a href="https://www.facebook.com/nttthuyenn" target="_blank">
+        <i
+          class="fa-brands fa-square-facebook fa-xl"
+          style="color: #006600"
+        ></i>
+      </a>
+      <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-thu-thuy%C3%AAn-2420b5275/" target="_blank">
+        <i class="fa-brands fa-linkedin fa-xl" style="color: #006600;"></i>
+      </a>
+      <a href="https://github.com/thuyennguyen020517" target="_blank">
+        <i
+          class="fa-brands fa-github fa-xl rotate-icon"
+          style="color: #006600"
+        ></i>
+      </a>
+    </div>
     <main>
-      <div class="frame" id="about">
+      <div class="section-padding" id="about"></div>
+      <div class="frame">
         <div class="container">
           <div class="column-left">
             <h2>ABOUT ME</h2>
@@ -94,7 +89,7 @@
                 <li>Date of birth:</li>
                 <li>Address:</li>
               </div>
-              <div>
+              <div class="info-contact">
                 <div>thuyennguyen020517@gmail.com</div>
                 <div>https://github.com/thuyennguyen020517</div>
                 <div>+84 372545069</div>
@@ -106,15 +101,18 @@
         </div>
       </div>
 
-      <h2 class="lable-subject" id="experience">WORK EXPERIENCE</h2>
+      <div id="experience"></div>
+      <h2 class="lable-subject">WORK EXPERIENCE</h2>
       <div class="row">
         <div class="col-name">
           <b>BOOKING HOTEL SYSTEM</b>
           <div>(10/2023 - 12/2023)</div>
         </div>
         <div class="col-detail">
-          <div><b>Number of member:</b>5</div>
-          <b>Source: https://github.com/thuyennguyen020517/InnSight.git</b>
+          <div><b>Number of member: </b>5 (yourself as FE client, admin)</div>
+          <a href="https://github.com/thuyennguyen020517/InnSight.git" target="_blank">
+            <b>Source:</b> https://github.com/thuyennguyen020517/InnSight.git
+          </a>
           <div><b>Technologies:</b> Java Spring-Boot, React, React Native</div>
           <div><b>Functional Description:</b></div>
           <div class="description">
@@ -138,7 +136,10 @@
           <div>(01/2023 - 5/2023)</div>
         </div>
         <div class="col-detail">
-          <div><b>Number of member:</b> individual</div>
+          <div><b>Number of member:</b> 4 (yourself as CRUD brands, laptops feature)</div>
+          <a href="https://github.com/thuyennguyen020517/Python_project.git" target="_blank">
+            <b>Source:</b> https://github.com/thuyennguyen020517/Python_project.git
+          </a>
           <div><b>Technologies:</b> Python, Django</div>
           <div><b>Functional Description:</b></div>
           <div class="description">
@@ -151,23 +152,27 @@
       </div>
       <div class="row">
         <div class="col-name">
-          <b>LAPTOP STORE</b>
-          <div>(01/2023 - 5/2023)</div>
+          <b>GRAB TUTOR SYSTEM</b>
+          <div>10/2022 - 1/2023</div>
         </div>
         <div class="col-detail">
-          <div><b>Number of member:</b> individual</div>
-          <div><b>Technologies:</b> Python, Django</div>
+          <div><b>Number of member:</b>: 3 (yourself as back-end and partly as front-end)</div>
+          <a href="https://github.com/thuyennguyen020517" target="_blank">
+            <b>Source:</b> https://github.com/thuyennguyen020517/GrapGiaSu.git
+          </a>
+          <div><b>Technologies:</b> php, MVC</div>
           <div><b>Functional Description:</b></div>
           <div class="description">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Manage accounts, questions, answers, money</li>
+            <li>If you have a question that can't be answered, post it in our system so people in the community can answer it.</li>
+            <li>Answer the question posted on the forum and claim some money for it. Students will pay to see their answers. 
+              If students do not agree with the answer, students can request a refund.</li>
           </div>
         </div>
       </div>
 
-      <h2 class="lable-subject" id="skill">SKILLS</h2>
+      <div id="skill"></div>
+      <h2 class="lable-subject" >SKILLS</h2>
       <div class="frame">
         <div class="styled">BACK-END</div>
         <nav class="item-skill">
@@ -187,6 +192,8 @@
           <li>Can read English document</li>
         </nav>
       </div>
+
+      <div id="education"></div>
       <div class="frame">
         <h2>EDUCATION</h2>
         <section>
@@ -206,6 +213,33 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <h3>NGUYEN THI THU THUYEN</h3>
+      <div>SOFTWARE DEVELOPER</div>
+      <div class="icon">
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQXjLXmTgPlrVJSqXWrXgfvQFMjHwQwjrCKjgSmvrDFMknvjVMhzdtQfhwqxfnFrNfgrL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-regular fa-envelope fa-lg" style="color: #006600"></i>
+        </a>
+        <a href="https://www.facebook.com/nttthuyenn" target="_blank">
+          <i
+            class="fa-brands fa-square-facebook fa-lg"
+            style="color: #006600"
+          ></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-thu-thuy%C3%AAn-2420b5275/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-lg" style="color: #006600;"></i>
+        </a>
+        <a href="https://github.com/thuyennguyen020517" target="_blank">
+          <i
+            class="fa-brands fa-github fa-lg rotate-icon"
+            style="color: #006600"
+          ></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
